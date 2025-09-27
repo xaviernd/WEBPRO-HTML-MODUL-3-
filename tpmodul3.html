@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Pribadi</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 28px; }
+        .container { width: 800px; margin: auto; }
+        .media-row {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            background: #ddd;
+        }
+        table {
+            margin-bottom: 14px;
+        }
+        th, td {
+            padding: 4px 16px 4px 6px;
+        }
+        textarea {
+            width: 250px;
+        }
+        form {
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <!-- Div: Kontainer utama untuk layout -->
+    <div class="container">
+        <p>Berikut adalah contoh websitenya:</p>
+
+        <h1>Profil Pribadi</h1>
+
+        <!-- Div: Baris media (gambar & video) -->
+        <div class="media-row">
+            <!-- Table: Untuk label foto dan video di baris atas -->
+            <!-- Tag <table> digunakan menempatkan 2 label bersebelahan (Foto Profil, Video Perkenalan) -->
+            <table>
+                <tr>
+                    <th>Foto Profil</th>
+                    <th>Video Perkenalan</th>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Img: Menampilkan foto profil -->
+                        <!-- Tag <img> menampilkan gambar profil; style kotak dengan width dan height sama -->
+                        <img src="image.jpg" alt="Foto Profil" class="profile-img">
+                    </td>
+                    <td>
+                        <!-- Video: Menampilkan video perkenalan -->
+                        <!-- Tag <video> menyisipkan video profile -->
+                        <video width="320" height="200" controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Video tidak tersedia.
+                        </video>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Tentang Saya -->
+        <h2>Tentang Saya</h2>
+        <p>
+            <!-- Div: Bagian tentang diri (opsional, untuk grouping teks) -->
+            <!-- Tag <div> digunakan untuk mengelompokkan paragraf tentang diri -->
+            Halo! Saya adalah seorang mahasiswa yang sedang belajar tentang pemrograman web di Telkom University.
+        </p>
+        
+        <!-- Keterampilan: Table untuk keahlian -->
+        <h2>Keterampilan</h2>
+        <!-- Table: Menampilkan daftar keterampilan dan tingkatannya -->
+        <table>
+            <tr>
+                <th>Keterampilan</th>
+                <th>Tingkat</th>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Pemula</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Pemula</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Menengah</td>
+            </tr>
+        </table>
+
+        <!-- Formulir Hubungi Saya -->
+        <h2>Hubungi Saya</h2>
+        <!-- Form: Untuk pengisian nama, email, pesan -->
+        <form action="#" method="post">
+            <label for="nama">Nama:</label>
+            <!-- Input: Kolom input nama pengunjung -->
+            <input type="text" id="nama" name="nama">
+            <br>
+            <label for="email">Email:</label>
+            <!-- Input: Kolom input email pengunjung -->
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="pesan">Pesan:</label>
+            <!-- Textarea: Kolom untuk input pesan pengunjung -->
+            <textarea id="pesan" name="pesan" rows="4"></textarea>
+            <br>
+            <!-- Button: Untuk submit formulir -->
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <!-- Daftar media sosial: Link anchor -->
+        <p><strong>Media Sosial:</strong></p>
+        <!-- A: Tag <a> untuk link media sosial -->
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+    </div>
+</body>
+</html>
